@@ -123,6 +123,15 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => (
+  <>
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://cdn-cookieyes.com/client_data/a6d2daf82e6694609d099305/script.js"
+    ></script>
+    <Seo title="Home" />
+  </>
+)
 
 export default IndexPage
